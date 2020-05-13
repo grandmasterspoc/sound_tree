@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Create a new project</h1>
+  <%= form_for @project do |f| %>
+    <div class="">
+      <%= f.label "Title" %><br>
+      <%= f.text_field :title, class:'form-control' %><br><br>
+      <%= f.label "description" %><br>
+      <%= f.text_field :description, class: 'form-control' %>
+
+      <%= f.submit "Create Project Repo" %>
+    </div>
+  <% end %>
+</div>
